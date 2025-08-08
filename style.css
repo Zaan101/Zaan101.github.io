@@ -293,7 +293,7 @@ body {
 }
 
 header {
-  padding: 60px 20px 30px;
+  padding: 10px 20px 30px;
 }
 
 section {
@@ -334,3 +334,38 @@ ul li {
   margin-left:20px;
 }
 
+/* sidebars for particles */
+/* sidebars for particles */
+#particles-left,
+#particles-right {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  z-index: 1;
+  pointer-events: none;
+}
+
+#particles-left {
+  left: 0;
+  width: calc((100vw - 600px) / 2);
+}
+
+#particles-right {
+  right: 0;
+  width: calc((100vw - 600px) / 2);
+}
+
+#particles-left canvas,
+#particles-right canvas {
+  width: 100% !important;
+  height: 100% !important;
+  pointer-events: auto;
+}
+
+/* hide on small screens */
+@media (max-width: 768px) {
+  #particles-left,
+  #particles-right {
+    display: none;
+  }
+}

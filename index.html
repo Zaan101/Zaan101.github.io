@@ -3,20 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <title>Zaan Saeed</title>
-<link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
 
   <link rel="stylesheet" href="./style.css">
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
 
 </head>
 <body>
+    <div id="particles-left"></div>
+   <div id="particles-right"></div>
+    <img src="./images/profile.png" alt="Profile Picture" style="margin-top:50px;margin-bottom:0; width:200px; height:auto; border:2px solid #ccc; border-radius:30%;">
     <header>
         <h1 class="name">Zaan Saeed</h1>
-        <p>Computer Science and Physics at Harvey Mudd College</p>
+        <!--<p>Email | Resume</p>-->
     </header>
     
     <section id="about">
         <h2>About Me</h2>
-        <p>I’m a second year CS+Physics student passionate about ML for drug discovery and physical systems.</p>
+        <p>I’m a second year Computer Science and Physics student at   <a href="https://www.hmc.edu/" target="_blank">Harvey Mudd College</a> 
+             passionate about ML for drug discovery and physical systems.</p>
     </section>
     
     <section id="projects">
@@ -28,7 +34,39 @@
 
         </ul>
     </section>
+ <script>
+  const cfgLeft = {
+    particles: {
+      number: { value: 50, density: { enable: true, value_area: 800 } },
+      color: { value: "#1772d0" },
+      shape: { type: "circle" },
+      opacity: { value: 0.5 },
+      size: { value: 2 },
+      line_linked: { enable: true, distance: 150, color: "#1772d0", opacity: 0.4, width: 1 },
+      move: { enable: true, speed: 2 }
+    },
+    interactivity: {
+      detect_on: "canvas",
+      events: {
+        onhover: { enable: true, mode: "repulse" },
+        onclick: { enable: true, mode: "push" }
+      },
+      modes: {
+        repulse: { distance: 200 },
+        push: { particles_nb: 4 }
+      }
+    },
+    retina_detect: true
+  };
 
+  // Use the same settings for right panel
+  const cfgRight = JSON.parse(JSON.stringify(cfgLeft));
+
+  /* initialize both panels independently */
+  particlesJS("particles-left", cfgLeft);
+  particlesJS("particles-right", cfgRight);
+</script>
+  
 </body>
 
 </html>
