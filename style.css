@@ -1,6 +1,21 @@
 body {
-  font-family: 'Lato', sans-serif;
-  align-items: center;
+  display: flex;
+  font-family: 'Lato',sans-serif;
+  flex-direction: column;
+  align-items: center;   /* Horizontally center everything */
+  justify-content: center; /* Optional: vertically center everything */
+  text-align: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9; /* Optional aesthetic */
+}
+
+header, section {
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 a {
   color: #1772d0;
