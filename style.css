@@ -1,79 +1,61 @@
 /* style.css */
 
-/* Base styles */
 body {
   font-family: 'Lato', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: #ffffff;
+  color: #111;
   line-height: 1.6;
 }
 
-/* Header */
 header {
-  background-color: #1772d0;
-  color: white;
-  padding: 60px 20px;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 60px 20px 30px;
 }
 
 .name {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0;
 }
 
 header p {
-  font-size: 1.2rem;
-  margin-top: 0;
+  font-size: 1.1rem;
+  margin-top: 10px;
+  color: #000000;
 }
 
-/* Section styling */
 section {
-  max-width: 800px;
-  margin: 40px auto;
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  margin: 0 auto 60px;
+  padding: 0 20px;
 }
 
 section h2 {
-  font-size: 1.8rem;
-  margin-bottom: 15px;
-  color: #1772d0;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 4px;
 }
 
-/* Project list */
 ul {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
+  margin: 0;
+  text-align: left;
 }
 
 li {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 a {
   color: #1772d0;
   text-decoration: none;
-  font-weight: 700;
-  transition: color 0.3s ease;
+  font-weight: 500;
 }
 
 a:hover {
-  color: #f09228;
-}
-
-/* Responsive design */
-@media (max-width: 600px) {
-  .name {
-    font-size: 2rem;
-  }
-
-  section {
-    margin: 20px;
-    padding: 20px;
-  }
+  text-decoration: underline;
 }
