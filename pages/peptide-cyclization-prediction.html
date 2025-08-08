@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>Prediction of Peptide Cyclization - Zaan Saeed</title>
   <link rel="stylesheet" href="../style.css">
+  <link rel="icon" href="../images/protein.ico" type="image/x-icon">
+
 </head>
 <body>
     <header>
@@ -21,21 +23,22 @@
         
         <h3>Languages and Libraries Used</h3>
         <ul>
-            <li>
-                
-            </li>
-            <li>test
-                
-            </li>
+            <li><strong>Languages:</strong> Python, Bash (shell)</li>
+            <li><strong>Core libs:</strong> scikit-learn, pandas, numpy, joblib, matplotlib, PyYAML</li>
+            <li><strong>Cheminformatics:</strong> RDKit (descriptors)</li>
+            <li><strong>External tools:</strong> Schrödinger Suite (Maestro + ConfGen/MacroModel) invoked via Bash for conformer search & minimization</li>
         </ul>
-        
+
         <h3>Features</h3>
         <ul>
-            <li></li>
-            <li></li>
-            <!-- Add specific features of your project -->
+            <li>Predicts peptide cyclization yield from conformational-ensemble descriptors.</li>
+            <li><strong>Automated conformer search:</strong> Bash scripts batch-run Schrödinger (Maestro/ConfGen/MacroModel) to generate & minimize conformers from SMILES; outputs are fed into the Python pipeline.</li>
+            <li><strong>Descriptors</strong>: backbone dihedrals, H-bond/amide–amide distances, side-chain geometry; Boltzmann-weighted ensemble averages.</li>
+            <li><strong>Models</strong>: Multiple Linear Regression, Random Forest, Support Vector Regression (cross-validated).</li>
+            <li>Config-driven runs via <code>config.yaml</code>; CLIs in <code>main.py</code>/<code>app.py</code> (Python) and Bash wrappers for Schrödinger jobs.</li>
+            <li>Saved trained model (<code>RFR_model.joblib</code>) and feature rankings (<code>features_sorted.csv</code>); plotting utilities in <code>visualization.py</code>.</li>
         </ul>
-        
+
         <h3>Links</h3>
         <p>
             <a href="https://github.com/Zaan101/ScriptsForOmo" target="_blank">View on GitHub</a>
@@ -44,6 +47,8 @@
         
         <h3>Screenshots/Demo</h3>
         <p><!-- Add screenshots or demo content here --></p>
+
+        
     </section>
 
 </body>
