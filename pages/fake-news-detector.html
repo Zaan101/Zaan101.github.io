@@ -14,35 +14,39 @@
     </header>
     
     <section id="project-details">
-        <h2>Project Overview</h2>
-        <p>A machine learning project that detects fake news articles using natural language processing techniques.</p>
-        
-        <h3>Technologies Used</h3>
-        <ul>
-            <li>
-                test
-            </li>
-            <li>test
 
-            </li>
+
+        <h3>Project Overview</h3>
+        <p>
+        A machine learning project that classifies news headlines as real or fake using NLP. It includes a FastAPI service for real-time inference and a small UI to try examples.
+        </p>
+
+        <h3>Languages and Libraries Used</h3>
+        <ul>
+        <li><strong>Languages:</strong> Python, HTML</li>
+        <li><strong>ML/NLP:</strong> PyTorch (BiLSTM), NLTK, <a href="https://nlp.stanford.edu/projects/glove/">GloVe embeddings</a></li>
+        <li><strong>Data:</strong> pandas, numpy</li>
+        <li><strong>Web/API:</strong> FastAPI, Uvicorn</li>
+        <li><strong>Visualization:</strong> Plotly (with UMAP/embedding views)</li>
         </ul>
-        
+
         <h3>Features</h3>
         <ul>
-            <li>Text analysis and classification</li>
-            <li>Machine learning model training</li>
-            <!-- Add specific features of your project -->
+        <li>Text preprocessing (tokenization, cleaning) and GloVe-based embeddings</li>
+        <li>BiLSTM model for binary classification (fake vs. real)</li>
+        <li>FastAPI endpoint for real-time predictions (+ interactive form)</li>
+        <li>Training/evaluation scripts and saved weights/checkpoints</li>
+        <li>Embedding visualization to explore nearest neighbors</li>
         </ul>
-        
+
         <h3>Links</h3>
-        <p>
-            <a href="https://github.com/Zaan101/fake-news-detector" target="_blank">View on GitHub</a>
-            <!-- Add demo link if you have one: <a href="your-demo-link">Live Demo</a> -->
-        </p>
-        
-        <h3>Screenshots/Demo</h3>
-        <p><!-- Add screenshots or demo content here --></p>
-    </section>
+        <ul>
+            <li><a href="https://fake-headline-detector.com">Working website!</a> (hosted via Railway)</li>
+        <li><a href="https://github.com/zaansaeed/fake-news-detector" target="_blank" rel="noopener">View on GitHub</a></li>
+        <li>Run locally: <code>uvicorn app.app:app --reload</code> → open <code>http://localhost:8000</code></li>
+        </ul>
+
+            </section>
 
 </body>
 </html>
